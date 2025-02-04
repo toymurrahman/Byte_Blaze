@@ -1,13 +1,13 @@
 import React from 'react';
 import Navbar from '../Navbar/Navbar';
 
-const Home = () => {
+const Bookmarks = () => {
     return (
         <div>
-           
-            <h1>This is home: hoooooooo</h1>
+            
+            <h1>Bookmarks</h1>
         </div>
     );
 };
 
-export default Home;
+export default Bookmarks;
