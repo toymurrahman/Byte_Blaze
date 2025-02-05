@@ -1,9 +1,10 @@
 import React from 'react';
-import { Link, useNavigation } from 'react-router-dom';
+import { Link, useLoaderData, useNavigation } from 'react-router-dom';
 import BlogCard from '../BlogCard/BlogCard';
 
 const Blogs = () => {
     const navigation = useNavigation()
+    const blogs = useLoaderData()
     return (
         <section className='  px-4 sm:px-8 lg:px-12 py-8'>
         <div className='container max-w-6xl py-6 mx-auto space-y-6 sm:space-y-12'>
