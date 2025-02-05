@@ -10,7 +10,6 @@ const Blog = () => {
     reading_time_minutes,
     public_reactions_count,
     published_at,
-    tags,
   } = blog;
 
   return (
@@ -80,20 +79,7 @@ const Blog = () => {
         </div>
       </article>
       <Outlet />
-      <div>
-        <div className="flex flex-wrap py-6 gap-2 border-t border-dashed dark:border-gray-600">
-            {
-                tags.map( tags => <a key={tags}
-                rel="noopener noreferrer"
-                href="#"
-                className="px-3 py-1 rounded-sm hover:underline dark:bg-violet-600 dark:text-gray-50"
-              >
-                #{tags}
-              </a> )
-            }
-          
-        </div>
-      </div>
+     
     </div>
   );
 };
