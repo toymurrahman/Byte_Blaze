@@ -1,9 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import placeholderImg from '../../assets/404.jpg'
+import { MdDeleteForever } from 'react-icons/md';
 
 const BlogCard = ({ blog, deletable, handleDelete }) => {
-    const { cover_image, title, description, published_at } = blog
+    const { cover_image, title, description, published_at } = blog;
     return (
       <div className='flex relative'>
         <Link
@@ -27,7 +28,7 @@ const BlogCard = ({ blog, deletable, handleDelete }) => {
           </div>
           <div></div>
         </Link>
-        {/* {deletable && (
+        {deletable && (
           <div
             onClick={() => handleDelete(blog.id)}
             className='bg-primary p-3 ml-5 rounded-full hover:bg-secondary group  cursor-pointer hover:scale-105 absolute -top-5 -right-5'
@@ -37,7 +38,7 @@ const BlogCard = ({ blog, deletable, handleDelete }) => {
               className='text-secondary group-hover:text-primary'
             />
           </div>
-        )} */}
+        )}
       </div>
     );
 };
