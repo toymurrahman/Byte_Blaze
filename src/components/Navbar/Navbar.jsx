@@ -25,7 +25,7 @@ const Navbar = () => {
   return (
     <div className="navbar bg-base-100 text-xl shadow-lg  sm:px-8 fixed z-10">
       <div className="flex-1">
-        <Link to='/' className="btn btn-ghost gap-0 text-secondary normal-case text-2xl"> Byte<span className='text-primary'>Blaze</span></Link>
+        <Link to='/' className="btn btn-ghost gap-0 text-secondary normal-case text-2xl"> News<span className='text-primary'>Flash</span></Link>
       </div>
       <div className="flex-none ">
         <ul className="menu menu-horizontal px-2 gap-2">

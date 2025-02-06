@@ -20,7 +20,7 @@ export const router = createBrowserRouter([
         {
           path: "/blogs",
           element: <Blogs/>,
-          loader: () => fetch('https://dev.to/api/articles?per_page=20&top=7'),
+          loader: () => fetch('https://dev.to/api/articles?per_page=120&top=10'),
         },
         {
           path: '/blog/:id',
