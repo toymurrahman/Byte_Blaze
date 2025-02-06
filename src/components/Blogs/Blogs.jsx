@@ -2,6 +2,7 @@ import React from 'react';
 import { Link, useLoaderData, useNavigation } from 'react-router-dom';
 import BlogCard from '../BlogCard/BlogCard';
 import Loader from '../Loader/Loader';
+import placeholderImg from '../../assets/404.jpg'
 
 const Blogs = () => {
     const navigation = useNavigation()
@@ -15,7 +16,7 @@ const Blogs = () => {
             className='block max-w-sm gap-3 mx-auto sm:max-w-full group hover:no-underline focus:no-underline lg:grid lg:grid-cols-12 '
           >
             <img
-              src={blogs[0]?.cover_image}
+              src={blogs[0]?.cover_image || blogs[0]?.social_image || placeholderImg}
               alt=''
               className='object-cover w-full h-64 rounded sm:h-96 lg:col-span-7 '
             />

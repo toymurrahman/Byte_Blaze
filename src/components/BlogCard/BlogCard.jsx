@@ -4,7 +4,7 @@ import placeholderImg from '../../assets/404.jpg'
 import { MdDeleteForever } from 'react-icons/md';
 
 const BlogCard = ({ blog, deletable, handleDelete }) => {
-    const { cover_image, title, description, published_at } = blog;
+    const { cover_image, title, description, published_at, social_image } = blog;
     return (
       <div className='flex relative'>
         <Link
@@ -14,7 +14,7 @@ const BlogCard = ({ blog, deletable, handleDelete }) => {
           <img
             role='presentation'
             className='object-cover w-full rounded h-44 '
-            src={cover_image || placeholderImg}
+            src={cover_image || social_image || placeholderImg}
           />
           <div className='py-6 space-y-2'>
             <h3 className='text-2xl font-semibold group-hover:underline group-focus:underline'>
